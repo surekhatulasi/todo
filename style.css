@@ -1,0 +1,62 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to right, blue, purple);
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+button {
+  background-color: blue;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+#taskInput {
+  width: 300px;
+  font-size: 15px;
+  text-align: left;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.yellow {
+  background-color: yellow;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.remove-button {
+  cursor: pointer;
+}
+.orange {
+  background-color: orange;
+}
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.completed::before {
+  content: none;
+  content: "\2713";
+  margin-right: 5px;
+}
